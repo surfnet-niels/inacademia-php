@@ -9,3 +9,7 @@ composer require jumbojett/openid-connect-php:0.2.*
 ```
 for composer based installs
 
+Configure your client in 
+```
+inacademia-php/config.php
+```
