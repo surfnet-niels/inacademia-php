@@ -11,7 +11,7 @@ $InAcademiaURL = 'https://op.srv.inacademia.org';
 
 function validate($clientID, $requestedValidation, $redirectURL) {
     if (!in_array($requestedValidation, array('affiliated', 'faculty+staff', 'employee', 'student'), true)){
-        throw new Exception('Selected affiliation is not supported for handle_validation_resonse');
+        throw new Exception('Selected affiliation is not supported for validation');
     }
 	
 	$_SESSION['inacademia']['validated'] = false;
