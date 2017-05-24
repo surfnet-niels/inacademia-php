@@ -4,7 +4,7 @@ session_set_cookie_params ( 5*60, "/", $InAcademiaClient_domain, true, true);
 session_start();
 
 // Load the OIDC client library and PHP Seclib library
-require '/usr/src/vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 // InAcademia OP location
 $InAcademiaURL = 'https://op.srv.inacademia.org';
